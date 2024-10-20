@@ -1,0 +1,86 @@
+/* Write your code here. */
+
+.bg-container {
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+.image {
+  height: 400px;
+  width: 500px;
+}
+.image-container {
+  order: -1;
+}
+.input-text {
+  outline: none;
+}
+.heading {
+  color: #ffffff;
+  text-align: center;
+  font-size: 42px;
+  font-family: Roboto;
+}
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  color: #ffffff;
+}
+.input-text {
+  border: solid 1px #e4e7eb;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 10px;
+  width: 250px;
+}
+
+.description {
+  color: #219a6f;
+  font-weight: bold;
+  padding: 8px;
+  font-size: 32px;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+@media screen and (min-width: 992px) {
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .heading {
+    max-width: 300px;
+    text-align: start;
+  }
+  .image-container {
+    order: 1;
+    justify-content: center;
+  }
+  .text-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .description {
+    font-size: 24px;
+  }
+}
